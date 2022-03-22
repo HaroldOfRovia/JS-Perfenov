@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <title>Интерполяция</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script type="text/javascript"></script>
+    </head>
+    <body>
+    	<h1>Интерполирование функций (второй метод Ньютона)</h1>
+      <h1> y = αcos(tg(β/(x-γ)) + δcos(εx)</h1>
+      <h1>Кудинкин Илья ИВТ-31</h1>
+      <canvas id="canvas" width="700" height="500">Ваш браузер не поддерживает canvas!</canvas>
+      <div>Введите параметры: </div>
+        <div>n: <input type="text" id="nodes" autocomplete="off" value="10" required></div>
+        <div>α: <input type="text" id="alfa" autocomplete="off" value="2" required></div>
+        <div>β: <input type="text" id="betta" autocomplete="off" value="1" required></div>
+        <div>γ: <input type="text" id="gamma" autocomplete="off" value="1" required></div>
+        <div>δ: <input type="text" id="delta" autocomplete="off" value="2" required></div>
+        <div>ε: <input type="text" id="epsilon" autocomplete="off" value="2" required></div>
+        <div>Δ: 
+          <select id="del">
+            <option>0.1</option>
+            <option>0.01</option>
+            <option>0.001</option>
+            <option>0.0001</option>
+          </select>
+        </div>
+
+        <div>Введите размеры окна:</div>
+        <div>По горизонтали от A=<input id="A" type="text" autocomplete="off" value="2" required> до B= 
+          <input id="B" type="text" value="7" autocomplete="off" required></div>
+        <div>По вертикали от C=<input id="C" type="text" autocomplete="off" value="-4" required> до D=
+          <input id="D" type="text" autocomplete="off" value="4" required></div>  
+        <div class="funk">
+          <div>Выберите, какие функции показать на графике: </div>
+          <div><input id="f" type="checkbox"> f(x)</div>
+          <div><input id="p" type="checkbox"> P<sub>n</sub>(x)</div>
+          <div><input id="r" type="checkbox"> r<sub>n</sub>(x)</div>
+          <div><input id="df" type="checkbox"> ∂f(x)</div>
+          <div><input id="dp" type="checkbox"> ∂P<sub>n</sub>(x)</div>
+        </div>
+        <button id="button">Построить выбранные графики</button>
+    </body>
+    <script src="js/script.js"></script>
+</html>
